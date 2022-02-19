@@ -1,4 +1,7 @@
 # routing-and-swithing
-  * Indien je bijdragen wilt leveren aan het project 
-  * Verbeteren of toevoegen, stuur dan een berichtje naar freshcookie 
-  * TEAMWOOOORKKKKK 
+  * Indien je content wilt verbeteren of toevoegen aan het project, stuur dan een berichtje naar freshcookie 
+    TEAMWOOOORKKKKK!!! 
+  * doel van de repository: 
+  ** Een chronologische samenvatting van de commando's in een ".md" file  
+  ** Indien meerderen mensen aan één cheatsheet werken, zal de qualiteit ervan verhoogd worden!
+ 
