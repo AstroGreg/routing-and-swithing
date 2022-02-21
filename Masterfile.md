@@ -64,11 +64,21 @@
            - Dees schakelt de DTP protocol op een poort uit, want sommige netwerken devices zijn soms onjuist geconfigureert 
              en dit kan uw netwerken dan beschadigen.
              DTP: Indien er een switchport in trunk mode wordt gezet, gaat het Dynamic Trunking Protocol er voor zorgen dat de verbonden 
-             poort ook een trunk poort wordt, door zijn gegevens automatische te configuren voor hem.
+             poort ook een trunk poort wordt, door zijn gegevens automatisch te configuren voor hem.
              https://www.ciscopress.com/articles/article.asp?p=2181837&seqNum=8
+             
+             INDIEN ERROR --> voordat je dit commando kan uitvoeren moet je deze switch eerst een trunk maken "switchport mode trunk"
              ```
              switchport nonegotiate
              ```
+           - Indien je het commando hierboven ongedaan wilt maken
+             ```
+             no switchport nonegotiate
+             ```
+           - Indien een buurtpoort een trunk is, zal deze poort ook een trunk worden en alle DTP settings overnemen. 
+             ```
+             switchport mode dynamic desirable 
+             ``
            - configureert de native vlan van een switch. Op deze link moet er dus geen vlan tag meer worden meegegeven op de frame, want 
              dit wordt nu gezien als de default link. (native vlans moeten op beide poorten juist geconfigureert worden) 
              Management protocollen zoals CDP, VTP of STP kunnen nu weer functioneren over deze switches. 
