@@ -78,7 +78,7 @@
            - Indien een buurtpoort een trunk is, zal deze poort ook een trunk worden en alle DTP settings overnemen. 
              ```
              switchport mode dynamic desirable 
-             ``
+             ```
            - configureert de native vlan van een switch. Op deze link moet er dus geen vlan tag meer worden meegegeven op de frame, want 
              dit wordt nu gezien als de default link. (native vlans moeten op beide poorten juist geconfigureert worden) 
              Management protocollen zoals CDP, VTP of STP kunnen nu weer functioneren over deze switches. 
