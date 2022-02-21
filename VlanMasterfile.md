@@ -7,6 +7,7 @@
      exit
      ```
 
+
    - ##### Meestal start je in "user execution mode" mode en wil ja naar "privilege mode" gaan. Het "enable" commando laat exact dat toe, het laat toe te switchen van user execution mode naar privilege mode (zie de foto "cli_modes" in de map images om alle mogelijkheden te zien. 
      ```
      enable
@@ -15,6 +16,7 @@
        ```
        configure terminal
        ```
+     ### SWITCH
        - #### creeer een vlan of ga in een bestaande vlan. 
          (mogelijk in global configuration mode van een switch)   
          ```
@@ -105,8 +107,24 @@
         ```
         show vlan brief
         ```
-
-      
-
+   ### ROUTER    
+   - #### een poort configureren 
+       ```
+       interface ethernetkabel/<portcombo> bv interface ethernet/0/1
+       int ethernetkabel/<portcombo> bv int fastethernet/0/1
+       ```
+        - een poort aanzetten 
+          ```
+          no shutdown
+          ```
+        - een ip address toekennen aan een poort
+          ```
+          ip address <address> <subnetmasker>
+          ```
+   - #### een interface op een poort configureren
+       ```
+       interface ethernetkabel/<portcombo> bv interface ethernet/0/<poort>.<interfaceid>
+       int ethernetkabel/<portcombo> bv int fastethernet/<poort>/<interfaceid>
+       ```
    
    
