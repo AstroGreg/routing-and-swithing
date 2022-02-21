@@ -1,4 +1,4 @@
-# Dit bestand bevat een enumeratie van de alle cli commando's
+# Dit bestand bevat een enumeratie van de alle cli commando's die iets met VLANS te maken hebben
 
 #### oplossing van 3.6.1 --> https://www.ccna6rs.com/3-6-1-packet-tracer-implement-vlans-and-trunking-answers/
   
